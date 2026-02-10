@@ -1,5 +1,5 @@
 
-# Melon - v2.0.0 - 223
+# Melon - v2.0.18 - 223
 
 ## 📋 Descripción General
 Esta versión aborda el siguiente ticket de Jira:
@@ -18,6 +18,6 @@ Se corrigió un problema en MIflota (Checklist Nivel 2) donde al faltar algún d
 
 ---
 
-**Versión de Lanzamiento:** v2.0.0 - 223  
+**Versión de Lanzamiento:** v2.0.18 - 223  
 **Ticket:** MSD-55
 
