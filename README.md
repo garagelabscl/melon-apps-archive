@@ -1,29 +1,28 @@
-# README #
+# 🚛🏗️ Melon Apps Archive
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Repositorio centralizado de entregables para el ecosistema de aplicaciones de **Melon**.
 
-### What is this repository for? ###
+## 📂 Estructura del Repositorio
+El repositorio está organizado jerárquicamente por ambiente, aplicación y versión para facilitar la gestión de lanzamientos y la revisión por parte del cliente:
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+1.  **qa/**: Versiones de prueba interna y validación de nuevas funcionalidades.
+2.  **preproduccion/**: Versiones estables para revisión del cliente en entornos controlados (evita alteración de datos reales).
+3.  **produccion/**: Versiones finales certificadas para despliegue en tiendas o hotfixes rápidos.
 
-### How do I get set up? ###
+## 🚀 Guía de Navegación
+Para encontrar un APK, sigue esta ruta de carpetas:
+`[ambiente] / [nombre-app] / [versión] /`
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+Cada carpeta de versión incluye:
+* 📦 El archivo **.apk** (Ej: `miseguridad-v1.2.0-qa.apk`).
+* 📜 Un archivo **README.md** con el changelog y detalles técnicos de esa compilación.
 
-### Contribution guidelines ###
+---
 
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+## 📝 Formato del Changelog (README por versión)
+Para mantener la trazabilidad, cada entrega debe documentar:
+* **Fecha:** Día de generación del build.
+* **Ambiente:** QA, Pre-producción o Producción.
+* **Novedades:** Funcionalidades añadidas.
+* **Fixes:** Errores corregidos.
+* **Notas:** Instrucciones especiales (ej: "Requiere desinstalar versión anterior").
