@@ -2,27 +2,52 @@
 
 Repositorio centralizado de entregables para el ecosistema de aplicaciones de **Melon**.
 
+## 📋 Aplicaciones
+
+| App | Descripción | Ir |
+|-----|-------------|----|
+| **Mimixer** | Mixer de operaciones | [📂 Ver entregas →](mimixer/) |
+| **Mi Flota** | Gestión de flotas | [📂 Ver entregas →](miflota/) |
+
 ## 📂 Estructura del Repositorio
-El repositorio está organizado jerárquicamente por ambiente, aplicación y versión para facilitar la gestión de lanzamientos y la revisión por parte del cliente:
 
-1.  **qa/**: Versiones de prueba interna y validación de nuevas funcionalidades.
-2.  **preproduccion/**: Versiones estables para revisión del cliente en entornos controlados (evita alteración de datos reales).
-3.  **produccion/**: Versiones finales certificadas para despliegue en tiendas o hotfixes rápidos.
+```
+Melon Archives/
+├── mimixer/
+│   ├── README.md          ← Versiones actuales y entregas recientes
+│   ├── CHANGELOG.md       ← Historial completo
+│   ├── qa/                ← Builds apuntando a QA
+│   ├── preprod/           ← Builds apuntando a Pre-producción
+│   └── prod/              ← Builds de Producción
+│       └── v3.0.0 - 235/
+│           ├── mimixer.prod.apk
+│           └── readme.md
+├── miflota/
+│   ├── README.md
+│   ├── CHANGELOG.md
+│   ├── qa/
+│   ├── preprod/
+│   └── prod/
+└── README.md              ← Este archivo
+```
 
-## 🚀 Guía de Navegación
-Para encontrar un APK, sigue esta ruta de carpetas:
-`[ambiente] / [nombre-app] / [versión] /`
+## 🚀 ¿Cómo encontrar un APK?
 
-Cada carpeta de versión incluye:
-* 📦 El archivo **.apk** (Ej: `miseguridad-v1.2.0-qa.apk`).
-* 📜 Un archivo **README.md** con el changelog y detalles técnicos de esa compilación.
+1. Elige la app de la tabla de arriba.
+2. En el README de la app verás las **versiones actuales** por ambiente y las **entregas recientes** con su descripción.
+3. Haz clic en el link de descarga del ambiente que necesites.
 
----
+Ruta de carpetas: `[app] / [ambiente] / [versión] /`
 
-## 📝 Formato del Changelog (README por versión)
-Para mantener la trazabilidad, cada entrega debe documentar:
-* **Fecha:** Día de generación del build.
-* **Ambiente:** QA, Pre-producción o Producción.
-* **Novedades:** Funcionalidades añadidas.
-* **Fixes:** Errores corregidos.
-* **Notas:** Instrucciones especiales (ej: "Requiere desinstalar versión anterior").
+### Ambientes
+
+| Ambiente | Descripción |
+|----------|-------------|
+| **qa/** | Entorno de prueba interna y validación de nuevas funcionalidades. |
+| **preprod/** | Entorno controlado para revisión del cliente (sin alteración de datos reales). |
+| **prod/** | Versión final certificada para despliegue en tiendas. |
+
+### Contenido de cada carpeta de versión
+
+* 📦 Archivo **.apk** con formato `<app>.<ambiente>.apk` (Ej: `mimixer.prod.apk`).
+* 📜 Archivo **readme.md** con changelog y detalles técnicos de la compilación.
