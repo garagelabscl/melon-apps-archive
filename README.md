@@ -44,7 +44,7 @@ Ruta de carpetas: `[app] / [ambiente] / [versión] /`
 | Ambiente | Descripción |
 |----------|-------------|
 | **qa/** | Entorno de prueba interna y validación de nuevas funcionalidades. |
-| **preprod/** | Entorno controlado para revisión del cliente (sin alteración de datos reales). |
+| **preprod/** | Entorno controlado para revisión del cliente (con datos de producción pero con accesos bajo demanda para mayor control). |
 | **prod/** | Versión final certificada para despliegue en tiendas. |
 
 ### Contenido de cada carpeta de versión
