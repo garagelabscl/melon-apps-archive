@@ -8,6 +8,7 @@ Repositorio centralizado de entregables para el ecosistema de aplicaciones de **
 |-----|-------------|----|
 | **Mimixer** | Mixer de operaciones | [📂 Ver entregas →](mimixer/) |
 | **Mi Flota** | Gestión de flotas | [📂 Ver entregas →](miflota/) |
+| **MiCamión** | Gestión logística para conductores de camión | [📂 Ver entregas →](micamion/) |
 
 ## 📂 Estructura del Repositorio
 
@@ -28,6 +29,9 @@ Melon Archives/
 │   ├── qa/
 │   ├── preprod/
 │   └── prod/
+├── micamion/
+│   ├── README.md
+│   └── qa/
 └── README.md              ← Este archivo
 ```
 
